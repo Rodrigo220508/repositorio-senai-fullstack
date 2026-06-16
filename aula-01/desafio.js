@@ -16,5 +16,5 @@ if (abaixoDoPeso) {
     console.log ("sobre peso")
 
 } else {
-    console.log ("obesidade")
+    console.log 
 }
