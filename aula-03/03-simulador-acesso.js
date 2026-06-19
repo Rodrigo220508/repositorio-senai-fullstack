@@ -3,8 +3,14 @@ let temCadastro = true;
 let temResponsavel = true;
 let bloqueado = false;
 
-if (!establoquado) {
-    console.log("Pode acessar")
+if (bloqueado) {
+    console.log("Acesso negado: usuário bloqueado.");
+} else if (idade >= 18 && temCadastro) {
+    console.log("Acesso liberado.");
+} else if (idade < 18 && temCadastro && temResponsavel) {
+    console.log("Acesso liberado com responsável.");
+} else if (!temCadastro) {
+    console.log("Acesso negado: cadastro necessário.");
 } else {
-    console.log("esta bloqueado")
+    console.log("Acesso negado.");
 }
